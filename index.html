@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hotel Chhattisgarh Palace on NH 53, Rajnandgaon. Premium AC rooms, highway restaurant with outdoor seating, and 24/7 Tata Power EV charging." />
+  <title>Hotel Chhattisgarh Palace — Premium Stay on NH-53, Rajnandgaon</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons (CDN) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+
+      <!-- Desktop Left Links -->
+      <ul class="navbar__links navbar__links--left" role="list">
+        <li><a href="#rooms" class="navbar__link">Rooms</a></li>
+        <li><a href="#dining" class="navbar__link">Dining</a></li>
+      </ul>
+
+      <!-- Logo -->
+      <a href="#" class="navbar__logo" aria-label="Hotel Chhattisgarh Palace – Home">
+        <span class="navbar__logo-the">Welcome to</span>
+        <span class="navbar__logo-name">Hotel Chhattisgarh Palace</span>
+        <span class="navbar__logo-rule" aria-hidden="true"></span>
+      </a>
+
+      <!-- Desktop Right Links -->
+      <ul class="navbar__links navbar__links--right" role="list">
+        <li><a href="#amenities" class="navbar__link">Amenities</a></li>
+        <li><a href="#gallery" class="navbar__link">Gallery</a></li>
+        <li><a href="#rooms" class="btn btn--nav">Book Now</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger -->
+      <button class="navbar__burger" id="burger-btn" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="navbar__burger-icon navbar__burger-icon--open" aria-hidden="true">
+          <i data-lucide="menu"></i>
+        </span>
+        <span class="navbar__burger-icon navbar__burger-icon--close" aria-hidden="true">
+          <i data-lucide="x"></i>
+        </span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="navbar__mobile" id="mobile-menu" role="dialog" aria-label="Mobile navigation" hidden>
+      <ul role="list">
+        <li><a href="#rooms"     class="navbar__mobile-link">Rooms</a></li>
+        <li><a href="#dining"    class="navbar__mobile-link">Dining</a></li>
+        <li><a href="#amenities" class="navbar__mobile-link">Amenities</a></li>
+        <li><a href="#gallery"   class="navbar__mobile-link">Gallery</a></li>
+        <li><a href="#rooms"     class="btn btn--mobile-book">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Hero">
+
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+
+      <div class="hero__eyebrow animate-hero" style="--delay: 0.4s">
+        <span class="hero__eyebrow-rule" aria-hidden="true"></span>
+        <span class="hero__eyebrow-text">NH-53 Highway, Rajnandgaon</span>
+        <span class="hero__eyebrow-rule" aria-hidden="true"></span>
+      </div>
+
+      <h1 class="hero__headline animate-hero" style="--delay: 0.6s">
+        Your Perfect Highway<br /><em>Rest & Relax</em>
+      </h1>
+
+      <p class="hero__sub animate-hero" style="--delay: 0.9s">
+        Experience a premium break journey on the NH-53 highway. Enjoy clean AC rooms, delicious multi-cuisine dining, and our 24/7 EV Charging Station.
+      </p>
+
+      <ul class="hero__pills animate-hero" style="--delay: 1.2s" role="list">
+        <li class="hero__pill">
+          <i data-lucide="bed-double" class="hero__pill-icon" aria-hidden="true"></i>
+          AC Rooms
+        </li>
+        <li class="hero__pill">
+          <i data-lucide="utensils" class="hero__pill-icon" aria-hidden="true"></i>
+          Highway Restaurant
+        </li>
+        <li class="hero__pill">
+          <i data-lucide="zap" class="hero__pill-icon" aria-hidden="true"></i>
+          EV Charging Station
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- Floating Booking Bar -->
+    <div class="booking-bar-wrap animate-hero" style="--delay: 1.4s">
+      <div class="booking-bar" role="search" aria-label="Availability search">
+
+        <div class="booking-bar__field">
+          <label class="booking-bar__label" for="checkin">Check-in</label>
+          <div class="booking-bar__input-row">
+            <i data-lucide="calendar" class="booking-bar__icon" aria-hidden="true"></i>
+            <input type="date" id="checkin" name="checkin" class="booking-bar__input" value="2025-03-28" aria-label="Check-in date" />
+          </div>
+        </div>
+
+        <div class="booking-bar__field">
+          <label class="booking-bar__label" for="checkout">Check-out</label>
+          <div class="booking-bar__input-row">
+            <i data-lucide="calendar" class="booking-bar__icon" aria-hidden="true"></i>
+            <input type="date" id="checkout" name="checkout" class="booking-bar__input" value="2025-04-02" aria-label="Check-out date" />
+          </div>
+        </div>
+
+        <div class="booking-bar__field">
+          <span class="booking-bar__label">Guests</span>
+          <div class="booking-bar__input-row">
+            <i data-lucide="users" class="booking-bar__icon" aria-hidden="true"></i>
+            <div class="booking-bar__guests" role="group" aria-label="Number of guests">
+              <button class="booking-bar__step" id="guests-dec" aria-label="Decrease guests">&#8722;</button>
+              <span class="booking-bar__count" id="guests-count" aria-live="polite" aria-atomic="true">2</span>
+              <button class="booking-bar__step" id="guests-inc" aria-label="Increase guests">+</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="booking-bar__cta" type="button" aria-label="Check availability">
+          Check Availability
+        </button>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT / WELCOME
+  ═══════════════════════════════════════════ -->
+  <section class="about section-pad" id="about" aria-label="About Hotel Chhattisgarh Palace">
+    <div class="container">
+      <div class="about__grid">
+
+        <!-- Text Column -->
+        <div class="about__text fade-up">
+          <div class="section-tag">Welcome to Chhattisgarh Palace</div>
+
+          <p class="about__script" aria-hidden="true">Break Journey</p>
+
+          <h2 class="about__headline">
+            A Refreshing Oasis<br />On Your Journey
+          </h2>
+
+          <p class="about__body">
+            Conveniently located on the Rajnandgaon-Nagpur NH-53 corridor, Hotel Chhattisgarh Palace is the ideal stop for highway travelers seeking comfort, cleanliness, and convenience. Our hygienic AC rooms offer the perfect place to rest and recharge during long journeys.
+          </p>
+          <p class="about__body">
+            With ample free parking, a family-friendly environment, and a 24/7 Tata Power EV charging station on-site, Chhattisgarh Palace is a complete break-journey destination for tired travelers and families. Enjoy our spacious playground, perfect for kids and family relaxation.
+          </p>
+
+          <ul class="about__stats" role="list">
+            <li class="about__stat">
+              <span class="about__stat-num">4.1 &#9733;</span>
+              <span class="about__stat-lbl">Rating</span>
+            </li>
+            <li class="about__stat">
+              <span class="about__stat-num">24/7</span>
+              <span class="about__stat-lbl">EV Charging</span>
+            </li>
+            <li class="about__stat">
+              <span class="about__stat-num">Free</span>
+              <span class="about__stat-lbl">Parking</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Image Column -->
+        <div class="about__img-wrap fade-up" style="--delay: 0.15s">
+          <span class="about__img-frame" aria-hidden="true"></span>
+          <img
+            src="./assets/front-hotel-photo.png"
+            alt="Exterior view of Hotel Chhattisgarh Palace"
+            class="about__img"
+            loading="lazy"
+            width="900"
+            height="520"
+          />
+          <div class="about__badge" aria-label="Google Rating">
+            <span class="about__badge-num">4.1&#9733;</span>
+            <span class="about__badge-lbl">Google Rated</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       ROOMS & SUITES
+  ═══════════════════════════════════════════ -->
+  <section class="rooms section-pad" id="rooms" aria-label="Rooms and Suites">
+    <div class="container">
+
+      <div class="section-header fade-up">
+        <div class="section-tag section-tag--center">Accommodations</div>
+        <h2 class="section-headline">Rooms &amp; Suites</h2>
+        <p class="section-sub">
+          Comfortable AC rooms with modern amenities, EV charging access, and thoughtful service. Perfect for families and travelers seeking a quality highway stay.
+        </p>
+      </div>
+
+      <ul class="rooms__grid" role="list">
+
+        <!-- Deluxe Room -->
+        <li class="room-card fade-up" style="--delay: 0s">
+          <div class="room-card__img-wrap">
+            <img
+              src="./assets/bedroom.png"
+              alt="Comfortable AC room with modern amenities"
+              class="room-card__img"
+              loading="lazy"
+              width="800"
+              height="222"
+            />
+          </div>
+          <div class="room-card__body">
+            <div class="room-card__header">
+              <h3 class="room-card__name">Standard AC Room</h3>
+              <span class="room-card__size">20 m²</span>
+            </div>
+            <ul class="room-card__amenities" role="list">
+              <li class="room-card__amenity">
+                <i data-lucide="bed-double" class="room-card__amen-icon" aria-hidden="true"></i>Comfortable Bed
+              </li>
+              <li class="room-card__amenity">
+                <i data-lucide="wifi" class="room-card__amen-icon" aria-hidden="true"></i>Free Wi-Fi
+              </li>
+              <li class="room-card__amenity">
+                <i data-lucide="tv" class="room-card__amen-icon" aria-hidden="true"></i>TV
+              </li>
+              <li class="room-card__amenity">
+                <i data-lucide="bell" class="room-card__amen-icon" aria-hidden="true"></i>Room Service
+              </li>
+            </ul>
+            <div class="room-card__footer">
+              <div class="room-card__price">
+                <span class="room-card__price-num">₹2,633</span>
+                <span class="room-card__price-per">/night</span>
+              </div>
+              <a href="#" class="room-card__link">
+                View Details
+                <span class="room-card__arrow" aria-hidden="true">
+                  <i data-lucide="chevron-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       RESTAURANT / CULINARY
+  ═══════════════════════════════════════════ -->
+  <section class="restaurant section-pad" id="dining" aria-label="Dining at Hotel Chhattisgarh Palace">
+    <div class="container">
+      <div class="restaurant__grid">
+
+        <!-- Text Column -->
+        <div class="restaurant__text fade-up">
+          <div class="section-tag">Palace Highway Restaurant</div>
+
+          <h2 class="restaurant__headline">
+            Palace Highway<br /><em>Restaurant</em>
+          </h2>
+
+          <p class="restaurant__body">
+            <strong>Palace Highway Restaurant</strong> offers a spacious dining experience for highway travelers and families. Enjoy a large indoor dining area and outside seating with refreshing highway views while relishing fresh, hygienic multi-cuisine meals.
+          </p>
+          <p class="restaurant__body">
+            Guests especially love our signature <strong>Masala Paneer</strong>, one of the most recommended dishes on the menu. With cooperative staff and a warm, family-friendly atmosphere, it is a perfect stop on your journey.
+          </p>
+
+          <ul class="restaurant__meta" role="list">
+            <li class="restaurant__meta-item">
+              <span class="restaurant__meta-label">Open Daily</span>
+              <span class="restaurant__meta-value">6:30 — 23:00</span>
+            </li>
+            <li class="restaurant__meta-item">
+              <span class="restaurant__meta-label">Cuisine</span>
+              <span class="restaurant__meta-value">Multi-Cuisine</span>
+            </li>
+            <li class="restaurant__meta-item">
+              <span class="restaurant__meta-label">Google Rating</span>
+              <span class="restaurant__meta-value">4.1 &#9733; (230+)</span>
+            </li>
+          </ul>
+
+          <a href="#" class="btn btn--outline" aria-label="Reserve a table at Palace Highway Restaurant">
+            Reserve a Table
+            <i data-lucide="arrow-right" class="btn__icon" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Image Column -->
+        <div class="restaurant__img-wrap fade-up" style="--delay: 0.18s">
+          <img
+            src="./assets/dining-tables.png"
+            alt="Spacious dining area at Palace Highway Restaurant"
+            class="restaurant__img"
+            loading="lazy"
+            width="900"
+            height="510"
+          />
+          <div class="restaurant__quote-card" aria-label="Guest feedback about the restaurant">
+            <div class="restaurant__stars" aria-label="Five stars" role="img">
+              <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+              <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+              <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+              <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+              <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            </div>
+            <blockquote class="restaurant__quote">"Must try the masala paneer!"</blockquote>
+            <cite class="restaurant__quote-source">— Guest Favorite</cite>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section class="testimonials section-pad" id="testimonials" aria-label="Guest testimonials">
+    <div class="container">
+
+      <div class="section-header fade-up">
+        <div class="section-tag section-tag--center">Guest Stories</div>
+        <h2 class="section-headline">What Our Guests Say</h2>
+      </div>
+
+      <ul class="testimonials__grid" role="list">
+
+        <li class="testimonial-card fade-up" style="--delay: 0s">
+          <div class="testimonial-card__stars" aria-label="Five stars" role="img">
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+          </div>
+          <blockquote class="testimonial-card__quote">
+            "Superb stay at this family friendly palace. If you are tired on NH53 this place is like your dream destination with respect to family need."
+          </blockquote>
+          <div class="testimonial-card__author">
+            <img
+              src="https://i.pravatar.cc/80?img=47"
+              alt="Sachindra Tandi"
+              class="testimonial-card__avatar"
+              loading="lazy"
+              width="42"
+              height="42"
+            />
+            <div>
+              <p class="testimonial-card__name">Sachindra Tandi</p>
+              <p class="testimonial-card__title">Local Guide</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="testimonial-card fade-up" style="--delay: 0.12s">
+          <div class="testimonial-card__stars" aria-label="Five stars" role="img">
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+          </div>
+          <blockquote class="testimonial-card__quote">
+            "Location is great and service of the hotel is nice. I like the view from the restaurant. Outside sitting is also there."
+          </blockquote>
+          <div class="testimonial-card__author">
+            <img
+              src="https://i.pravatar.cc/80?img=33"
+              alt="Suman Bhaskar"
+              class="testimonial-card__avatar"
+              loading="lazy"
+              width="42"
+              height="42"
+            />
+            <div>
+              <p class="testimonial-card__name">Suman Bhaskar</p>
+              <p class="testimonial-card__title">Local Guide</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="testimonial-card fade-up" style="--delay: 0.24s">
+          <div class="testimonial-card__stars" aria-label="Five stars" role="img">
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+            <i data-lucide="star" class="star-icon star-icon--filled" aria-hidden="true"></i>
+          </div>
+          <blockquote class="testimonial-card__quote">
+            "Good and cooperative staff. Taste of food is awesome, Must try the masala paneer!"
+          </blockquote>
+          <div class="testimonial-card__author">
+            <img
+              src="https://i.pravatar.cc/80?img=45"
+              alt="Amit Ohal"
+              class="testimonial-card__avatar"
+              loading="lazy"
+              width="42"
+              height="42"
+            />
+            <div>
+              <p class="testimonial-card__name">Amit Ohal</p>
+              <p class="testimonial-card__title">Guest Review</p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" id="contact" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="#" class="footer__logo" aria-label="Hotel Chhattisgarh Palace – Home">
+            <span class="footer__logo-the">Welcome to</span>
+            <span class="footer__logo-name">Hotel Chhattisgarh Palace</span>
+            <span class="footer__logo-rule" aria-hidden="true"></span>
+          </a>
+          <p class="footer__tagline">
+            Your premium highway stay on NH-53. Comfortable rooms, delicious dining, and 24/7 Tata Power EV charging.
+          </p>
+          <ul class="footer__social" role="list" aria-label="Social media links">
+            <li>
+              <a href="#" class="footer__social-link" aria-label="Instagram">
+                <i data-lucide="instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-link" aria-label="Facebook">
+                <i data-lucide="facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-link" aria-label="WhatsApp">
+                <i data-lucide="phone" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Location -->
+        <div class="footer__col">
+          <h3 class="footer__col-heading">Location</h3>
+          <address class="footer__address">
+            <div class="footer__contact-row">
+              <i data-lucide="map-pin" class="footer__contact-icon" aria-hidden="true"></i>
+              <span>NH 53, Tumdiboda, Nathu Nawagaon,<br />Chhattisgarh 491557</span>
+            </div>
+            <div class="footer__contact-row">
+              <i data-lucide="phone" class="footer__contact-icon" aria-hidden="true"></i>
+              <a href="tel:+917880033363" class="footer__contact-link">+91 78800 33363</a>
+            </div>
+            <div class="footer__contact-row">
+              <i data-lucide="mail" class="footer__contact-icon" aria-hidden="true"></i>
+              <a href="mailto:booking@chhattisgarhpalace.in" class="footer__contact-link">booking@chhattisgarhpalace.in</a>
+            </div>
+          </address>
+          <a href="https://maps.google.com/maps/place/NH+53,+Tumdiboda,+Nathu+Nawagaon,+Rajnandgaon,+Chhattisgarh+491557" target="_blank" rel="noopener noreferrer" class="footer__map-link">View on Map &rarr;</a>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__col">
+          <h3 class="footer__col-heading">Quick Links</h3>
+          <nav aria-label="Footer quick links">
+            <ul class="footer__links" role="list">
+              <li><a href="#rooms"       class="footer__link">Rooms &amp; Suites</a></li>
+              <li><a href="#dining"      class="footer__link">Dining &amp; Bar</a></li>
+              <li><a href="#amenities"   class="footer__link">Spa &amp; Wellness</a></li>
+              <li><a href="#"            class="footer__link">Meetings &amp; Events</a></li>
+              <li><a href="#gallery"     class="footer__link">Gallery</a></li>
+              <li><a href="#"            class="footer__link">Press</a></li>
+              <li><a href="#"            class="footer__link">Careers</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer__col footer__col--newsletter">
+          <h3 class="footer__col-heading">Special Offers</h3>
+          <p class="footer__nl-body">
+            Subscribe for exclusive discounts, seasonal packages, and special dining offers.
+          </p>
+          <div class="footer__nl-form" id="newsletter-form">
+            <div class="footer__nl-input-wrap" id="nl-input-wrap">
+              <label for="nl-email" class="sr-only">Email address</label>
+              <input
+                type="email"
+                id="nl-email"
+                name="email"
+                class="footer__nl-input"
+                placeholder="Your email address"
+                autocomplete="email"
+                aria-label="Email address for newsletter"
+              />
+              <button class="footer__nl-btn" id="nl-submit-btn" type="button" aria-label="Subscribe to newsletter">
+                <i data-lucide="send" aria-hidden="true"></i>
+              </button>
+            </div>
+            <p class="footer__nl-success" id="nl-success" hidden>
+              &#10003; Thank you. We'll be in touch.
+            </p>
+          </div>
+          <div class="footer__member-box" aria-label="Guest benefits">
+            <p class="footer__member-label">Our guests enjoy</p>
+            <p class="footer__member-perks">
+              Best rates &middot; Free parking &middot; Free Wi-Fi &middot; Complimentary tea/coffee
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Hotel Chhattisgarh Palace. All rights reserved.</p>
+        <nav aria-label="Legal links">
+          <ul class="footer__legal" role="list">
+            <li><a href="#" class="footer__legal-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__legal-link">Terms of Service</a></li>
+            <li><a href="#" class="footer__legal-link">Cookie Settings</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
